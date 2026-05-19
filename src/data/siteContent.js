@@ -1,128 +1,95 @@
 export const navItems = [
-  { href: '#khong-gian', label: 'Không gian' },
-  { href: '#hien-trang', label: 'Hiện trạng' },
-  { href: '#phuong-phap', label: 'Phương pháp' },
-  { href: '#goi-tap', label: 'Gói tập' },
+  { href: '#hien-trang', label: 'Pain Point' },
+  { href: '#phuong-phap', label: 'Giải pháp' },
+  { href: '#minh-chung', label: 'Minh chứng' },
+  { href: '#dang-ky', label: 'Đăng ký' },
 ];
 
 export const stats = [
-  { value: '1:1', label: 'Huấn luyện cá nhân' },
-  { value: '5-17', label: 'Độ tuổi phù hợp' },
-  { value: '3 bước', label: 'Đánh giá - tập - theo dõi' },
-];
-
-export const galleryGroups = [
-  {
-    id: 'khong-gian',
-    eyebrow: 'Không gian tập luyện',
-    title: 'Phòng tập riêng tư, hiện đại và an toàn',
-    description:
-      'Không gian đen - vàng nhận diện Kaizen, thiết bị chuyên sâu và khu vận động phù hợp cho trẻ từ 5-17 tuổi.',
-    images: [
-      {
-        src: 'images/gym-space-1.png',
-        alt: 'Không gian phòng tập Kaizen với thiết bị và khu vận động',
-      },
-      {
-        src: 'images/gym-space-2.png',
-        alt: 'Khu máy tập và sàn vận động trong phòng tập Kaizen',
-      },
-      {
-        src: 'images/gym-space-3.png',
-        alt: 'Khu thiết bị sức mạnh và tường nhận diện Kaizen',
-      },
-    ],
-  },
-  {
-    id: 'danh-gia',
-    eyebrow: 'Huấn luyện & đánh giá',
-    title: 'Bài tập cá nhân hóa, đo đạc và theo dõi chỉ số',
-    description:
-      'Các buổi tập 1:1 kết hợp đánh giá chuyên sâu để phụ huynh nắm rõ tiến trình phát triển của bé.',
-    images: [
-      {
-        src: 'images/training-1.png',
-        alt: 'Huấn luyện viên hướng dẫn bé tập luyện 1:1',
-      },
-      {
-        src: 'images/assessment-1.png',
-        alt: 'Đánh giá chuyên sâu và theo dõi chỉ số trên máy tính bảng',
-      },
-      {
-        src: 'images/measurement-1.png',
-        alt: 'Đo đạc chiều cao và đánh giá tư thế cho bé',
-      },
-    ],
-  },
+  { value: '1:1', label: 'PT cá nhân hóa cho từng bé' },
+  { value: '5-17', label: 'Độ tuổi phát triển vàng' },
+  { value: '3 bước', label: 'Đánh giá, can thiệp, theo dõi' },
 ];
 
 export const problems = [
   {
-    title: 'Gù lưng',
+    title: 'Con đang gù lưng?',
     description:
-      'Lưng cong, vai đổ về trước do ngồi học hoặc dùng điện thoại sai tư thế.',
+      'Vai đổ về trước, lưng cong và dễ mỏi do ngồi học, dùng điện thoại hoặc thiếu vận động đúng.',
   },
   {
-    title: 'Cổ rùa',
+    title: 'Thấp hơn bạn cùng tuổi?',
     description:
-      'Đầu đưa ra trước, cổ mỏi, dễ ảnh hưởng dáng đứng và sự tự tin.',
+      'Cơ thể thiếu kích thích vận động phù hợp khiến nền tảng sức mạnh, linh hoạt và chiều cao phát triển chậm.',
   },
   {
-    title: 'Lệch vai',
-    description: 'Một bên vai cao hơn, dáng đi không cân bằng.',
-  },
-  {
-    title: 'Yếu cơ lõi',
-    description: 'Khó giữ thẳng lưng, nhanh mệt khi vận động.',
-  },
-  {
-    title: 'Ít vận động',
-    description: 'Thể lực giảm, phản xạ chậm, dễ tăng cân hoặc thiếu cân.',
-  },
-  {
-    title: 'Chậm cao',
+    title: 'Lệch vai, dáng đi lệch?',
     description:
-      'Thiếu vận động phù hợp trong giai đoạn phát triển chiều cao.',
+      'Một bên vai cao hơn, dáng đứng thiếu cân bằng, ảnh hưởng sự tự tin và thói quen vận động lâu dài.',
+  },
+  {
+    title: 'Cổ rùa, yếu cơ lõi?',
+    description:
+      'Đầu đưa ra trước, khó giữ lưng thẳng, nhanh mệt khi học tập hoặc chơi thể thao.',
   },
 ];
 
 export const methodChecklist = [
-  'Test chiều cao, cân nặng, sức mạnh và độ linh hoạt.',
-  'Đánh giá gù lưng, cổ rùa, lệch vai, dáng đi.',
-  'Lộ trình cá nhân hóa theo độ tuổi và thể trạng.',
-  'Cập nhật kết quả định kỳ cho phụ huynh.',
+  'Đo chiều cao, cân nặng, biên độ vận động, sức mạnh nền và khả năng giữ thăng bằng.',
+  'Sàng lọc gù lưng, cổ rùa, lệch vai, dáng đi và thói quen sinh hoạt hằng ngày.',
+  'Thiết kế giáo án 1:1 theo tuổi, thể trạng, mục tiêu và tốc độ thích nghi của từng bé.',
+  'Cập nhật tiến trình định kỳ để phụ huynh thấy rõ thay đổi bằng dữ liệu và hình ảnh.',
 ];
 
 export const steps = [
   {
-    title: 'Đánh giá',
-    description: 'Kiểm tra thể chất và thói quen vận động.',
+    title: 'Chẩn đoán chuyên sâu',
+    description: 'PT kiểm tra tư thế, chiều cao, sức mạnh, độ linh hoạt và mục tiêu phát triển.',
   },
   {
-    title: 'Thiết kế giáo án',
-    description: 'Chọn bài chỉnh dáng, kéo giãn, sức mạnh phù hợp.',
+    title: 'Can thiệp cá nhân hóa',
+    description: 'Bài tập chỉnh dáng, sức mạnh, kéo giãn và vận động chức năng được tinh chỉnh từng buổi.',
   },
   {
-    title: 'Theo dõi tiến bộ',
-    description: 'Ghi nhận thay đổi sau từng giai đoạn.',
+    title: 'Theo dõi bằng dữ liệu',
+    description: 'Lưu ảnh, chỉ số và nhận xét chuyên môn để phụ huynh biết bé đang tiến bộ ra sao.',
   },
 ];
 
-export const benefits = [
+export const evidenceCards = [
   {
-    title: 'Chỉnh dáng',
+    title: 'Before / After có mốc đo',
+    label: 'Posture progress',
+    image: 'images/measurement-1.png',
     description:
-      'Cải thiện tư thế đứng, ngồi, dáng đi và khả năng giữ thăng bằng.',
+      'Kaizen ghi nhận tư thế, chiều cao và các chỉ số theo từng giai đoạn để phụ huynh nhìn thấy tiến trình thật.',
   },
   {
-    title: 'Sửa gù',
+    title: 'PT 1:1 tinh tế và chuẩn kỹ thuật',
+    label: 'Coach standard',
+    image: 'images/training-1.png',
     description:
-      'Tăng sức mạnh cơ lưng, cơ lõi và xây dựng thói quen vận động đúng.',
+      'Huấn luyện viên quan sát sát sao từng chuyển động, sửa lỗi nhỏ và giữ cường độ an toàn cho trẻ.',
   },
   {
-    title: 'Tăng chiều cao',
+    title: 'Phụ huynh nhận báo cáo rõ ràng',
+    label: 'Parent feedback',
+    image: 'images/assessment-1.png',
     description:
-      'Kết hợp kéo giãn, vận động toàn thân, ngủ nghỉ và kỷ luật tập luyện.',
+      'Mỗi lộ trình có cập nhật bằng hình ảnh, nhận xét chuyên môn và định hướng tập luyện tiếp theo.',
+  },
+];
+
+export const testimonials = [
+  {
+    quote:
+      'Sau vài tuần, bé tự đứng thẳng hơn và chủ động vận động. Điều làm tôi yên tâm nhất là PT giải thích rất kỹ từng chỉ số.',
+    parent: 'Phụ huynh bé 11 tuổi',
+  },
+  {
+    quote:
+      'Không gian riêng tư, lịch tập kỷ luật, báo cáo rõ ràng. Kaizen cho cảm giác đây là một chương trình phát triển thể chất nghiêm túc.',
+    parent: 'Phụ huynh bé 14 tuổi',
   },
 ];
 
@@ -130,27 +97,19 @@ export const pricingPlans = [
   {
     title: 'Trải nghiệm',
     price: '50 buổi',
-    features: ['Chuẩn đoán thể trạng', 'Tập thử cùng HLV', 'Giáo án nền tảng'],
+    features: ['Chẩn đoán thể trạng', 'Tập thử cùng HLV', 'Giáo án nền tảng'],
   },
   {
     title: 'Bứt tốc',
     price: '100 buổi',
     badge: 'Phổ biến',
     featured: true,
-    features: [
-      'Lộ trình cá nhân hóa',
-      'Theo dõi định kỳ',
-      'Ưu tiên lịch học linh hoạt',
-    ],
+    features: ['Lộ trình cá nhân hóa', 'Theo dõi định kỳ', 'Ưu tiên lịch học linh hoạt'],
   },
   {
     title: 'Chuyên sâu',
     price: '200 buổi',
-    features: [
-      'Đồng hành dài hạn',
-      'Đánh giá chuyên sâu',
-      'Báo cáo tiến bộ cho phụ huynh',
-    ],
+    features: ['Đồng hành dài hạn', 'Đánh giá chuyên sâu', 'Báo cáo tiến bộ cho phụ huynh'],
   },
 ];
 

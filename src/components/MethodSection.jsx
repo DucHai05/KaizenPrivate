@@ -5,16 +5,17 @@ export default function MethodSection() {
   return (
     <section id="phuong-phap" className="section method section-dark">
       <div className="method-left">
-        <p className="eyebrow">Phương pháp Kaizen</p>
-        <h2>Chuẩn đoán chuyên sâu trước khi xây dựng lộ trình</h2>
+        <p className="eyebrow">Solution</p>
+        <h2>Kaizen giải quyết bằng chẩn đoán chuyên sâu trước khi tập</h2>
         <p>
-          Không áp dụng một giáo án cho tất cả. Mỗi bé được kiểm tra thể chất,
-          tư thế và mục tiêu riêng để thiết kế bài tập phù hợp.
+          Không dùng một giáo án cho tất cả. Mỗi bé được kiểm tra tư thế, sức mạnh,
+          độ linh hoạt và thói quen vận động để PT xây lộ trình riêng, vừa an toàn
+          vừa đủ thử thách.
         </p>
         <ul className="check-list">
           {methodChecklist.map((item) => <li key={item}>{item}</li>)}
         </ul>
-        <ButtonLink href="#dang-ky">Nhận tư vấn miễn phí</ButtonLink>
+        <ButtonLink href="#dang-ky">Nhận tư vấn lộ trình</ButtonLink>
       </div>
       <div className="steps">
         {steps.map((step, index) => (

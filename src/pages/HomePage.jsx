@@ -1,18 +1,16 @@
 import { useEffect } from 'react';
-import BenefitsSection from '../components/BenefitsSection.jsx';
 import ContactSection from '../components/ContactSection.jsx';
+import EvidenceSection from '../components/EvidenceSection.jsx';
 import Footer from '../components/Footer.jsx';
-import GallerySection from '../components/GallerySection.jsx';
 import Header from '../components/Header.jsx';
 import HeroSection from '../components/HeroSection.jsx';
 import MethodSection from '../components/MethodSection.jsx';
-import PricingSection from '../components/PricingSection.jsx';
 import ProblemSection from '../components/ProblemSection.jsx';
 
 export default function HomePage() {
   useEffect(() => {
     const revealItems = document.querySelectorAll(
-      '.hero-content, .hero-card, .section-title, .grid article, .gallery-card, .method-left, .steps > div, .lead-form, .form-copy',
+      '.hero-content, .hero-proof, .section-title, .grid article, .method-left, .steps > div, .evidence-card, .testimonial-card, .lead-form, .form-copy',
     );
 
     revealItems.forEach((item, index) => {
@@ -42,11 +40,9 @@ export default function HomePage() {
       <Header />
       <main id="top">
         <HeroSection />
-        <GallerySection />
         <ProblemSection />
         <MethodSection />
-        <BenefitsSection />
-        <PricingSection />
+        <EvidenceSection />
         <ContactSection />
       </main>
       <Footer />

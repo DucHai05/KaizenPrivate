@@ -53,13 +53,17 @@ export default function LeadForm() {
       }
     }
 
-    setStatus({ type: 'success', message: 'Cảm ơn ba mẹ! Kaizen đã nhận thông tin và sẽ liên hệ sớm.' });
+    setStatus({ type: 'success', message: 'Cảm ơn ba mẹ. Kaizen đã nhận thông tin và sẽ liên hệ sớm.' });
     setFormData(initialForm);
     setIsSubmitting(false);
   };
 
   return (
     <form className="lead-form" onSubmit={submitLead}>
+      <div className="form-head">
+        <span>Free Assessment</span>
+        <strong>Nhận lịch đánh giá 1:1</strong>
+      </div>
       {status.message && <div className={`alert ${status.type}`} role="status">{status.message}</div>}
       <label>
         Họ tên phụ huynh
@@ -80,7 +84,7 @@ export default function LeadForm() {
         </select>
       </label>
       <button type="submit" className="btn btn-primary full" disabled={isSubmitting}>
-        {isSubmitting ? 'Đang gửi...' : 'Gửi đăng ký'}
+        {isSubmitting ? 'Đang gửi...' : 'Gửi đăng ký ngay'}
       </button>
     </form>
   );

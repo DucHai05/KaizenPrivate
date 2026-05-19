@@ -17,7 +17,7 @@ export default function Header() {
           </a>
         ))}
         <a href="#dang-ky" className="nav-cta" onClick={closeMenu}>
-          Đăng ký
+          Đánh giá miễn phí
         </a>
       </nav>
       <button

@@ -2,29 +2,29 @@ import { stats } from '../data/siteContent.js';
 import ButtonLink from './ButtonLink.jsx';
 
 const heroImage = `${import.meta.env.BASE_URL}images/gym-space-1.png`;
-const hideMissingImage = (event) => {
-  event.currentTarget.hidden = true;
-};
 
 export default function HeroSection() {
   return (
-    <section className="hero section-dark">
+    <section className="hero section-dark" aria-label="Kaizen Private GymKid">
+      <img className="hero-bg" src={heroImage} alt="" aria-hidden="true" />
+      <div className="hero-overlay" />
+
       <div className="hero-content">
-        <p className="eyebrow hero-eyebrow">Chuyên sâu cho trẻ từ 5 - 17 tuổi</p>
+        <p className="eyebrow hero-eyebrow">Kaizen Private GymKid 1:1</p>
         <h1 className="hero-title">
-          <span>Chỉnh dáng đúng</span>
-          <span className="highlight">Sửa gù sớm</span>
-          <span>Hỗ trợ tăng chiều cao</span>
+          <span>Chỉnh dáng.</span>
+          <span className="highlight">Sửa gù sớm.</span>
+          <span>Tăng nền tảng chiều cao.</span>
         </h1>
         <p className="hero-text">
-          Kaizen Private GymKid xây dựng lộ trình 1:1 giúp trẻ cải thiện tư thế,
-          tăng sức mạnh nền tảng và phát triển thể chất an toàn theo từng độ
-          tuổi.
+          Hệ thống PT chuyên sâu cho trẻ 5-17 tuổi, kết hợp chẩn đoán tư thế,
+          giáo án cá nhân hóa và theo dõi tiến trình bằng dữ liệu để phụ huynh
+          thấy rõ sự thay đổi của con.
         </p>
         <div className="hero-actions">
-          <ButtonLink href="#dang-ky">Đăng ký chuẩn đoán chuyên sâu</ButtonLink>
+          <ButtonLink href="#dang-ky">Đăng ký đánh giá miễn phí</ButtonLink>
           <ButtonLink href="#phuong-phap" variant="outline">
-            Xem phương pháp
+            Xem quy trình chuyên sâu
           </ButtonLink>
         </div>
         <div className="stats">
@@ -37,33 +37,11 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="hero-card">
-        <div className="photo-placeholder">
-          <img
-            className="hero-photo"
-            src={heroImage}
-            alt="Không gian phòng tập Kaizen Private Fitness"
-            onError={hideMissingImage}
-          />
-          <div className="hero-card-brand">
-            <span className="brand-mark">K</span>
-            <div>
-              <strong>KAIZEN</strong>
-              <small>PRIVATE GYMKID</small>
-            </div>
-          </div>
-
-          <div className="hero-media-label">
-            <span>Lộ trình 1:1</span>
-            <p>Cá nhân hóa cho từng bé</p>
-          </div>
-        </div>
-
-        <div className="floating-card">
-          <strong>Đánh giá chuyên sâu</strong>
-          <span>Tư thế, chiều cao, sức mạnh và thói quen vận động</span>
-        </div>
-      </div>
+      <aside className="hero-proof" aria-label="Tiêu chuẩn huấn luyện Kaizen">
+        <span className="proof-kicker">International PT Standard</span>
+        <strong>Đánh giá trước khi tập, theo dõi sau từng giai đoạn.</strong>
+        <p>Tư thế, sức mạnh, độ linh hoạt và thói quen vận động đều được kiểm tra trước khi thiết kế giáo án.</p>
+      </aside>
     </section>
   );
 }

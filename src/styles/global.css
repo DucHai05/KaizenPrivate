@@ -179,9 +179,9 @@ img {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
   gap: clamp(28px, 4vw, 56px);
-  align-items: end;
+  align-items: center;
   min-height: calc(100svh - 128px);
-  padding: clamp(60px, 8vw, 108px) max(var(--page-pad), calc((100vw - 1380px) / 2)) 56px;
+  padding: clamp(42px, 6vw, 82px) max(var(--page-pad), calc((100vw - 1380px) / 2)) 46px;
   overflow: hidden;
 }
 
@@ -250,20 +250,21 @@ img {
 
 .hero-title {
   display: grid;
-  gap: clamp(8px, 1.1vw, 14px);
-  max-width: 980px;
-  margin: 0 0 26px;
+  gap: clamp(6px, 0.9vw, 11px);
+  max-width: 1120px;
+  margin: 0 0 22px;
   color: #fffaf0;
   font-family: 'Oswald', 'Be Vietnam Pro', Arial, sans-serif;
-  font-size: clamp(54px, 7.4vw, 116px);
+  font-size: clamp(46px, 5.85vw, 90px);
   font-weight: 700;
-  line-height: 1.02;
+  line-height: 1;
   text-transform: uppercase;
   text-wrap: balance;
 }
 
 .hero-title span {
   display: block;
+  white-space: nowrap;
 }
 
 .hero-title .highlight {
@@ -271,12 +272,12 @@ img {
   padding: 0 0.16em 0.08em;
   color: #060606;
   background: linear-gradient(135deg, #ffe27a, var(--gold));
-  box-shadow: 10px 10px 0 var(--red);
+  box-shadow: 8px 8px 0 var(--red);
 }
 
 .hero-text {
   max-width: 760px;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   color: #efe8dc;
   font-size: clamp(16px, 1.5vw, 20px);
   line-height: 1.78;
@@ -361,7 +362,7 @@ img {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
   max-width: 760px;
-  margin-top: 38px;
+  margin-top: 28px;
 }
 
 .stats div {
@@ -1003,6 +1004,10 @@ h3 {
   .hero-title {
     font-size: clamp(42px, 12vw, 58px);
     line-height: 1.08;
+  }
+
+  .hero-title span {
+    white-space: normal;
   }
 
   .hero-title .highlight {

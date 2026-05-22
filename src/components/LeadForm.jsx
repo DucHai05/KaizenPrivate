@@ -8,6 +8,8 @@ const initialForm = {
   goal: goalOptions[0],
 };
 
+const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080';
+
 export default function LeadForm() {
   const [formData, setFormData] = useState(initialForm);
   const [status, setStatus] = useState({ type: '', message: '' });
@@ -30,15 +32,20 @@ export default function LeadForm() {
     setStatus({ type: '', message: '' });
 
     try {
-      const response = await fetch('./api/leads.php', {
+      const response = await fetch(`${apiBaseUrl}/api/consultation`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          parentName: formData.name,
+          phone: formData.phone,
+          childAge: formData.age ? Number(formData.age) : null,
+          goal: formData.goal,
+        }),
       });
       const contentType = response.headers.get('content-type') || '';
 
       if (!contentType.includes('application/json')) {
-        throw new SyntaxError('PHP endpoint is not executable in Vite dev.');
+        throw new Error('Máy chủ trả về dữ liệu không hợp lệ.');
       }
 
       const result = await response.json();
@@ -46,11 +53,9 @@ export default function LeadForm() {
         throw new Error(result.message || 'Không thể gửi đăng ký.');
       }
     } catch (error) {
-      if (!(error instanceof SyntaxError)) {
-        setStatus({ type: 'error', message: error.message || 'Không thể gửi đăng ký. Vui lòng thử lại.' });
-        setIsSubmitting(false);
-        return;
-      }
+      setStatus({ type: 'error', message: error.message || 'Không thể gửi đăng ký. Vui lòng thử lại.' });
+      setIsSubmitting(false);
+      return;
     }
 
     setStatus({ type: 'success', message: 'Cảm ơn ba mẹ. Kaizen đã nhận thông tin và sẽ liên hệ sớm.' });

@@ -13,7 +13,7 @@ export default function HeroSection() {
       <div className="hero-content">
         <p className="eyebrow hero-eyebrow">Kaizen Private GymKid 1:1</p>
         <h1 className="hero-title">
-          Gym hiện đại cho bé Việt khỏe dáng, cao lớn, tự tin.
+          Chỉnh dánh - Sửa gù - Tăng chiều cao - Phát triển thể chất toàn diện
         </h1>
         <p className="hero-text">
           Chương trình PT riêng cho trẻ 5-17 tuổi, kết hợp đánh giá tư thế,

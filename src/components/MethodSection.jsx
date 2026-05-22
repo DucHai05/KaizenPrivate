@@ -5,11 +5,11 @@ export default function MethodSection() {
   return (
     <section id="phuong-phap" className="section method section-dark">
       <div className="method-left">
-        <p className="eyebrow">Solution</p>
-        <h2>Kaizen giải quyết bằng chẩn đoán chuyên sâu trước khi tập</h2>
+        <p className="eyebrow">Phương pháp Kaizen</p>
+        <h2>Chẩn đoán kỹ trước khi tập, rồi mới xây giáo án riêng.</h2>
         <p>
-          Không dùng một giáo án cho tất cả. Mỗi bé được kiểm tra tư thế, sức mạnh,
-          độ linh hoạt và thói quen vận động để PT xây lộ trình riêng, vừa an toàn
+          Kaizen không dùng một giáo án cho tất cả. Mỗi bé được kiểm tra tư thế,
+          sức mạnh, độ linh hoạt và thói quen vận động để HLV xây lộ trình vừa an toàn,
           vừa đủ thử thách.
         </p>
         <ul className="check-list">

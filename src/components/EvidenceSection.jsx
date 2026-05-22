@@ -7,9 +7,9 @@ export default function EvidenceSection() {
   return (
     <section id="minh-chung" className="section evidence">
       <SectionTitle
-        eyebrow="Evidence"
-        title="Minh chứng bằng hình ảnh, PT và phản hồi phụ huynh"
-        subtitle="Một brand premium không chỉ nói hay. Kaizen cho phụ huynh thấy quy trình, con người và tiến trình tập luyện một cách rõ ràng."
+        eyebrow="Minh chứng"
+        title="Có ảnh, có chỉ số, có phản hồi của phụ huynh."
+        subtitle="Một chương trình tốt cần cho ba mẹ thấy rõ quy trình, con người và tiến trình tập luyện của con."
         variant="red"
       />
 

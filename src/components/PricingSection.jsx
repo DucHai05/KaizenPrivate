@@ -5,7 +5,10 @@ import SectionTitle from './SectionTitle.jsx';
 export default function PricingSection() {
   return (
     <section id="goi-tap" className="section pricing section-dark">
-      <SectionTitle eyebrow="Lịch học & gói tập" title="Chọn lộ trình phù hợp cho bé" />
+      <SectionTitle
+        eyebrow="Lịch học và gói tập"
+        title="Chọn lộ trình phù hợp với mục tiêu của bé."
+      />
       <div className="grid cards-3 price-grid">
         {pricingPlans.map((plan) => (
           <article className={`price-card ${plan.featured ? 'popular' : ''}`} key={plan.title}>

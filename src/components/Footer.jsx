@@ -1,13 +1,15 @@
+const footerLogoUrl = `${import.meta.env.BASE_URL}images/logo-kaizen.png`;
+
 export default function Footer() {
   return (
     <footer className="site-footer">
       <div className="footer-inner">
-        <strong className="footer-brand">KAIZEN PRIVATE FITNESS</strong>
+        <img className="footer-logo" src={footerLogoUrl} alt="Kaizen Private Fitness" />
         <p className="footer-tagline">
-          Hệ thống phòng tập chuyên PT 1:1 cho trẻ từ 5-17 tuổi
+          Phòng tập PT 1:1 cho trẻ 5-17 tuổi, chỉnh dáng, tăng sức mạnh và nuôi thói quen vận động.
         </p>
         <div className="footer-info">
-          <p>Hotline 24/7: 0988 177 173</p>
+          <p>Hotline: 0988 177 173</p>
           <p>Mở cửa: 06:00 - 21:00</p>
         </div>
         <div className="footer-locations">
